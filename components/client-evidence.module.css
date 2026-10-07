@@ -1,0 +1,61 @@
+.strip { padding-block:36px 56px; }
+.strip h2 { font-family:var(--font-satoshi),sans-serif; text-align:center; font-weight:400; font-size:11px; text-transform:uppercase; letter-spacing:.14em; color:#666; }
+.marquee { overflow:hidden; margin-top:30px; mask-image:linear-gradient(to right,transparent,#000 7%,#000 93%,transparent); }
+.track { display:flex; width:max-content; animation:client-scroll 65s linear infinite; }
+.logos { list-style:none; padding:0; margin:0; display:flex; align-items:center; flex-shrink:0; }
+.logos li { width:200px; padding-inline:20px; height:80px; display:flex; align-items:center; justify-content:center; gap:12px; flex-shrink:0; }
+.marqueeLogo { width:100%; height:58px; object-fit:contain; }
+.avatar { width:44px; height:44px; flex-shrink:0; border-radius:50%; overflow:hidden; }
+.avatar img { display:block; width:116%; max-width:none; height:116%; margin:-8%; object-fit:cover; }
+.clientName { font-size:14px; color:#555; max-width:110px; line-height:1.4; }
+.marquee:hover .track,.strip:focus-within .track { animation-play-state:paused; }
+@keyframes client-scroll { to { transform:translateX(-50%); } }
+@media(prefers-reduced-motion:reduce) {
+ .marquee {mask-image:none;overflow:visible;}
+ .track {width:100%;animation:none;}
+ .logos {width:100%;flex-wrap:wrap;justify-content:center;}
+ .logos li {width:50%;max-width:220px;}
+ .logos[aria-hidden=true] {display:none;}
+}
+.choices { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:32px; }
+.choices button { border:1px solid #e5e1d9; border-radius:30px; background:#fff; font-size:13px; min-height:44px; padding:10px 16px; text-align:left; }
+.choices button[aria-pressed=true] { color:#fff; background:#111; border-color:#111; }
+.detail { display:grid; gap:26px; align-items:center; }
+.visual { min-width:0; display:flex; align-items:center; justify-content:center; padding:20px 0; }
+.imageFrame { width:100%; max-width:290px; }
+.visual img { display:block; width:100%; height:170px; object-fit:contain; }
+.visual img[data-loaded=true] { animation:case-reveal 240ms ease-out both; }
+.brand img { opacity:1; }
+/* Preserve the complete supplied square artwork and its original background. */
+.marqueeLogo.suppliedLogo { width:80px; height:80px; }
+.visual img.suppliedLogo { height:200px; object-fit:contain; }
+.portrait .imageFrame { width:260px; max-width:85%; aspect-ratio:1; border-radius:50%; overflow:hidden; box-shadow:0 12px 36px #21170812; }
+.portrait img { width:116%; max-width:none; height:116%; margin:-8%; object-fit:cover; }
+.privateVisual .imageFrame { max-width:250px; border-radius:20px; overflow:hidden; }
+.privateVisual img { height:auto; filter:grayscale(1); }
+.story { animation:case-reveal 240ms ease-out both; }
+@keyframes case-reveal { from { opacity:0; } to { opacity:1; } }
+@media(prefers-reduced-motion:reduce) { .story,.visual img[data-loaded=true] { animation:none; } }
+.category { font-size:11px; color:#705321; letter-spacing:.06em; }
+.story h3 { font-family:var(--font-satoshi),sans-serif; font-weight:900; letter-spacing:-.03em; font-size:clamp(30px,3vw,42px); line-height:1.15; margin:12px 0 24px; }
+.value { margin-bottom:28px; }
+.value strong { display:block; color:#8b6419; font-size:clamp(27px,4vw,40px); letter-spacing:-.04em; font-weight:500; line-height:1.2; }
+.value span { display:block; color:#666; font-size:12px; margin-top:8px; }
+.story h4 { font-size:11px; text-transform:uppercase; letter-spacing:.07em; font-weight:500; margin:22px 0 8px; }
+.story>p:not(.category) { font-size:16px; line-height:1.65; color:#555; }
+.story .benefit { color:#111; }
+@media(min-width:768px) {
+ .logos li { width:240px; padding-inline:28px; }
+ .strip {padding-block:42px 64px;}
+ .detail { grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:48px;min-height:380px; }
+ .visual { padding:24px 0; }
+ .imageFrame { max-width:320px; }
+ .visual img { height:210px; }
+ .portrait .imageFrame { width:320px; max-width:90%; }
+ .portrait img { height:116%; }
+ .privateVisual img {height:auto;}
+ .story {padding-block:12px;}
+}
+
+/* Centre the official square artwork in the existing logo slot. */
+.marqueeLogo.gourmetLogo,.visual img.gourmetLogo { object-fit:cover; object-position:50% 45%; padding-inline:12px; background:#2d2d2f; border-radius:6px; }

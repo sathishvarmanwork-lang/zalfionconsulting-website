@@ -1,0 +1,16 @@
+Anatomical brain visualisations
+
+Model source: Brain Project by Itay Inbar
+https://github.com/itayinbarr/brainproject
+
+Anatomy assets: Copyright Z-Anatomy contributors and BodyParts3D / DBCLS.
+Source model: https://github.com/itayinbarr/brainproject/blob/main/brain-atlas/models/brain.glb
+
+License: Creative Commons Attribution-ShareAlike 4.0 International
+https://creativecommons.org/licenses/by-sa/4.0/
+
+Adaptation for Zalfion Consulting: Selected cerebral cortex, cerebellum, and brainstem. Applied ivory shading and a fixed side view. Rendered as a static WebP image. This adapted image is also distributed under CC BY-SA 4.0.
+
+The image is illustrative and is not intended for medical diagnosis or anatomical instruction.
+
+Interactive adaptation: The cortex, cerebellum and brainstem were sampled into a lightweight 3D point cloud, reoriented and scaled. The derived brain-network.json geometry is distributed under CC BY-SA 4.0. Gold business-area groupings are illustrative and do not represent anatomical functions.

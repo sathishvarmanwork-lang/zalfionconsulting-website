@@ -1,0 +1,116 @@
+{
+  "problems": [
+    [
+      "leads",
+      "Leads go quiet.",
+      "Follow-ups get missed.",
+      "Follow up while interest is fresh.",
+      "Your AI 2nd Brain brings enquiries together, prioritises leads, and automates follow-ups so your sales team can focus on moving conversations towards a sale."
+    ],
+    [
+      "admin",
+      "Admin fills the day.",
+      "There is less time for customers.",
+      "Put routine work in motion.",
+      "Your AI 2nd Brain automates routine reporting, data entry, and document handling so your team has more time for customers and delivery."
+    ],
+    [
+      "information",
+      "Answers are scattered.",
+      "Your team keeps switching tools.",
+      "See what needs your attention.",
+      "Your AI 2nd Brain brings sales, stock, and team updates into a shared business view so you can spot issues and decide what to do next."
+    ],
+    [
+      "knowledge",
+      "Every question finds you.",
+      "Work waits for the owner.",
+      "Put company knowledge to work.",
+      "Your AI 2nd Brain makes company knowledge and procedures easy to find so your team can answer everyday questions and keep work moving without always waiting for you."
+    ]
+  ],
+  "steps": [
+    [
+      "diagnose",
+      "Scope",
+      "Choose the work your brain will handle.",
+      "We identify a revenue or operations priority, then map the company knowledge, tools, and workflows your AI 2nd Brain needs.",
+      "Your starting point: A defined business use case."
+    ],
+    [
+      "build",
+      "Build & deploy",
+      "Put your AI 2nd Brain to work.",
+      "We connect the relevant information and tools, build the workflow, and test it before deploying your AI 2nd Brain for your team to use.",
+      "Your outcome: A working AI 2nd Brain for the agreed workflow."
+    ],
+    [
+      "improve",
+      "Improve",
+      "Refine it around real use.",
+      "We review how your team uses the AI 2nd Brain and refine its knowledge and workflows as your business needs change.",
+      "Your next step: Improvements guided by team feedback."
+    ]
+  ],
+  "cases": [
+    [
+      "treoo",
+      "TREOO Group",
+      "SALES & OPERATIONS REPORTING",
+      "Sales and product reports took time to prepare.",
+      "Automated reporting that turns sales and product records into reports for the team.",
+      "Less reporting work. Faster decisions.",
+      "S$200k to S$300k",
+      "Estimated annual value"
+    ],
+    [
+      "gourmet",
+      "The Gourmet Factor",
+      "OPERATIONS VISIBILITY",
+      "HR, payroll, sales, and finance information needed to be tracked across the business.",
+      "One daily dashboard bringing HR, payroll, sales, and finance into a shared business view.",
+      "One business view. Faster action.",
+      "S$200k",
+      "Estimated annual value"
+    ],
+    [
+      "money",
+      "Money Maverick",
+      "CLIENT ADMIN & RENEWALS",
+      "Following up on client forms and contract renewals required repeated chasing.",
+      "One system that brings client forms and contract renewals together.",
+      "Less chasing. More renewals.",
+      "S$48k",
+      "Reported annual value at the current monthly rate"
+    ]
+  ],
+  "partners": [
+    [
+      "orion",
+      "Orion Consultancy",
+      "Shervin Soleymanpoor",
+      "Co-Founder and CEO/CTO",
+      "ENTERPRISE SYSTEMS",
+      "SAP delivery and integration expertise, relevant to connecting an AI 2nd Brain with existing enterprise systems.",
+      "SS"
+    ],
+    [
+      "thalassis",
+      "Thalassis Consulting",
+      "Uros Perisic",
+      "Managing Director",
+      "SOFTWARE ENGINEERING",
+      "Strategy and software engineering experience across aviation, energy, and finance, bringing a perspective on complex systems and business workflows.",
+      "UP"
+    ],
+    [
+      "healthcare",
+      "Healthcare Asia",
+      "Ezmond",
+      "Healthcare platform partner",
+      "HEALTHCARE PLATFORMS",
+      "A Singapore platform connecting patients with specialists, clinics, and hospitals, bringing a healthcare perspective to the partner network.",
+      "E"
+    ]
+  ]
+}

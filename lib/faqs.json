@@ -1,0 +1,42 @@
+[
+  {
+    "key": "knowledge",
+    "question": "Do I need to understand AI first?",
+    "answer": "No. Bring a business challenge, such as missed follow-ups, manual reports, or repeated team questions. We help identify how an AI 2nd Brain could connect your knowledge, tools, and workflows to address it."
+  },
+  {
+    "key": "fit",
+    "question": "Could an AI 2nd Brain help my business?",
+    "answer": "If your team chases follow-ups, repeats admin, gathers information across tools, or waits for answers, there may be a useful application. The discovery call explores where an AI 2nd Brain could support revenue or operations."
+  },
+  {
+    "key": "tools",
+    "question": "Can my AI 2nd Brain work with our existing tools?",
+    "answer": "Your current tools are the starting point. We look at how information moves between them and what your AI 2nd Brain needs to access. The connections depend on the tools and access available."
+  },
+  {
+    "key": "cost",
+    "question": "How much does an AI 2nd Brain cost?",
+    "answer": "The cost depends on the workflow, systems, and build scope. We use the discovery call to understand the business outcome you want and define a suitable AI 2nd Brain project."
+  },
+  {
+    "key": "time",
+    "question": "Can you deploy an AI 2nd Brain in 24 hours?",
+    "answer": "Our offer is to build and deploy AI 2nd Brains in 24 hours. Use the discovery call to discuss the workflow you need, the information and access involved, and what delivery will cover for your business."
+  },
+  {
+    "key": "data",
+    "question": "How will my AI 2nd Brain use business data?",
+    "answer": "We discuss the information your AI 2nd Brain needs, who should have access, and which systems are involved. Data access and handling are part of planning the build."
+  },
+  {
+    "key": "support",
+    "question": "What happens after my AI 2nd Brain is deployed?",
+    "answer": "The Improve stage reviews how your team uses the AI 2nd Brain and refines its knowledge and workflows as your needs change. Ongoing support and improvement are defined in the project scope."
+  },
+  {
+    "key": "call",
+    "question": "What should I bring to the discovery call?",
+    "answer": "Bring a revenue or operations challenge, the tools you use, and one or two examples of the work involved. If you completed the assessment, your suggested AI 2nd Brain application is a useful starting point."
+  }
+]

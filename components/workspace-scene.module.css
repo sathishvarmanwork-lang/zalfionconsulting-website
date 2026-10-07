@@ -1,0 +1,30 @@
+.scene { position:relative; width:100%; height:420px; margin-top:10px; background:radial-gradient(ellipse at 50% 64%,#f5f1e8 0%,#fff 65%); }
+.canvas { position:absolute; inset:0; border-radius:24px; }
+.canvas canvas { display:block; touch-action:pan-y; cursor:grab; }
+.canvas canvas:active { cursor:grabbing; }
+.hint { position:absolute; bottom:6px; width:100%; text-align:center; font-size:11px; letter-spacing:.04em; color:#7c766c; pointer-events:none; }
+.fallback { position:absolute; top:16%; left:10%; width:80%; border:1px solid #ddd4c2; padding:25px; background:#fffefa; box-shadow:5px 8px 0 #e9e2d3,10px 20px 30px #30271914; transform:perspective(900px) rotateY(-8deg) rotateZ(-3deg); }
+.fallback>span { font-size:10px; color:var(--deep); }
+.fallback h3 { font-size:24px; margin:18px 0; }
+.fallback p { font-size:12px; margin:12px 0; color:var(--slate); }
+.fallback hr { border:0; border-top:1px solid #e0daca; }
+@media(min-width:700px) { .scene { height:530px; } }
+.workflow { min-width:0; }
+.sceneLabel { color:var(--deep); font-size:10px; letter-spacing:.07em; text-transform:uppercase; font-weight:500; }
+.workflow .scene { height:360px; margin-top:0; }
+.workflow .compact { height:260px; }
+.controls { display:flex; align-items:center; gap:16px; border-top:0; font-size:11px; color:#736d62; min-height:44px; }
+.controls>span { margin-right:auto; }
+.controls button { min-height:44px; padding:8px 0; font-size:12px; color:var(--deep); text-underline-offset:4px; }
+.controls button:hover { text-decoration:underline; }
+.workflow .fallback { padding:18px; }
+.workflow .fallback h3 { font-size:21px; margin:10px 0; }
+.workflow .fallback p { margin:8px 0; }
+@media(min-width:1050px) { .workflow .scene { height:430px; } .workflow .compact { height:310px; } }
+
+/* Crop unused stage space on process illustrations, retaining card/text scale. */
+@media(max-width:699px) {
+ .processMobile .scene { height:260px; overflow:hidden; }
+ .processMobile .canvas { inset:auto 0; top:-44px; height:340px; }
+ .processMobile .fallback { top:4%; }
+}

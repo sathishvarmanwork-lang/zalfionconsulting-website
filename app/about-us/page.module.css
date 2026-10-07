@@ -1,0 +1,47 @@
+.page h1 { font-size:clamp(36px,4.7vw,66px); line-height:1.08; text-wrap:balance; }
+.page h2 { font-size:clamp(28px,3vw,40px); }
+.intro { padding-block:56px 64px; display:grid; gap:28px; }
+.intro h1 { margin-top:20px; }
+.introCopy { align-self:end; max-width:48ch; color:var(--slate); }
+.introCopy p + p { margin-top:16px; }
+.textLink { display:inline-flex; align-items:center; gap:24px; min-height:44px; margin-top:20px; color:var(--deep); }
+.textLink { color:var(--ink); transition:color 150ms ease-out; }
+.textLink :global(.arrow) { transition:transform 150ms ease-out; }
+@media(hover:hover) and (pointer:fine) {
+  .textLink:hover { color:var(--deep); text-decoration:none; }
+}
+@media(hover:hover) and (pointer:fine) and (prefers-reduced-motion:no-preference) {
+  .textLink:hover :global(.arrow) { transform:translateY(3px); }
+}
+@media(prefers-reduced-motion:reduce) { .textLink,.textLink :global(.arrow) { transition:none; } }
+.mission { background:var(--muted); padding-block:36px; }
+.missionInner { display:grid; gap:20px; }
+.mission h2 { font-size:16px; font-weight:500; color:var(--deep); }
+.mission p { max-width:36ch; font-size:clamp(24px,2.7vw,36px); line-height:1.35; letter-spacing:-.025em; }
+.mission span { color:var(--deep); }
+.leadership { display:grid; gap:28px; padding-block:52px 40px; }
+.leadership h2 { margin-top:12px; }
+.leaders { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:24px; }
+.leaders :global(.frame-large) { width:100%; height:auto; max-width:240px; aspect-ratio:1; }
+.leaders h3 { margin-top:20px; font-size:24px; }
+.page article p { color:var(--slate); font-size:14px; margin-top:4px; }
+.groups { display:grid; gap:40px; padding-bottom:48px; }
+.group { display:grid; gap:24px; }
+.group h2 { font-size:24px; }
+.people { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:16px; }
+.people :global(.portrait-frame) { width:100%; max-width:128px; height:auto; aspect-ratio:1; }
+.people h3 { margin-top:16px; font-size:18px; }
+.closing { display:flex; flex-direction:column; align-items:flex-start; gap:24px; padding-block:32px 48px; }
+.closing h2 { margin-top:12px; }
+.closing :global(.button) { width:100%; max-width:320px; }
+@media(min-width:700px) {
+  .intro { padding-block:72px; grid-template-columns:1.2fr 1fr; gap:48px; }
+  .introCopy { font-size:18px; }
+  .mission { padding-block:48px; }
+  .missionInner,.leadership,.group { grid-template-columns:1fr 2fr; gap:48px; }
+  .leadership { padding-block:64px 56px; }
+  .leaders { gap:48px; max-width:640px; }
+  .groups { gap:48px; padding-bottom:56px; }
+  .people { gap:32px; }
+  .closing { flex-direction:row; justify-content:space-between; align-items:center; padding-block:40px 64px; }
+}
